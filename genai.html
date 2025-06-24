@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generative AI | AI Mastery Hub</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body { background: #f5f7fa; font-family: 'Nunito Sans', 'Inter', Arial, sans-serif; }
+    .hero-bg { background: linear-gradient(90deg, #754ffe 0%, #1c1e2b 100%); color: #fff; padding: 4rem 0 3rem 0; border-radius: 0 0 2rem 2rem; position: relative; overflow: hidden; }
+    .hero-illustration { max-width: 120px; width: 100%; margin: 2rem auto 0 auto; display: block; }
+    .feature-icon { font-size: 2.5rem; color: #754ffe; margin-bottom: 1rem; }
+    .badge-tech { background: #e9e7fd; color: #754ffe; font-size: 0.9em; font-weight: 600; border-radius: 0.5rem; padding: 0.4em 1em; margin-bottom: 0.7em; display: inline-block; }
+    .navbar-brand { font-weight: 800; letter-spacing: 1px; }
+    .footer-link { color: #b0b8c9; text-decoration: none; }
+    .footer-link:hover { color: #754ffe; }
+    .footer-bg { background: #232a34; color: #b0b8c9; }
+    .footer-title { color: #fff; font-weight: 700; font-size: 1.1em; margin-bottom: 0.7em; }
+    .footer-logo { font-weight: 800; color: #fff; font-size: 1.3em; letter-spacing: 1px; }
+    .footer-logo span { color: #754ffe; }
+    .content-section { margin-bottom: 3rem; }
+    .tech-stack-item { background: #f8f9fa; border-radius: 0.5rem; padding: 1rem; margin-bottom: 1rem; border-left: 4px solid #754ffe; }
+    .learning-level { background: linear-gradient(45deg, #754ffe, #5a3fd8); color: white; padding: 0.3em 0.8em; border-radius: 1rem; font-size: 0.8em; font-weight: 600; }
+    .analogy-box { background: #e8f4fd; border-left: 4px solid #007bff; padding: 1rem; border-radius: 0.5rem; margin: 1rem 0; }
+    .try-this-box { background: #fff3cd; border: 1px solid #ffeaa7; border-radius: 0.5rem; padding: 1rem; margin: 1rem 0; }
+    .misconception-box { background: #f8d7da; border-left: 4px solid #dc3545; padding: 1rem; border-radius: 0.5rem; margin: 1rem 0; }
+    .step-box { background: #f8f9fa; border-radius: 0.5rem; padding: 1.5rem; margin: 1rem 0; border: 1px solid #e9ecef; }
+    .step-number { background: #754ffe; color: white; width: 30px; height: 30px; border-radius: 50%; display: inline-flex; align-items: center; justify-content-center; font-weight: bold; margin-right: 1rem; }
+    .difficulty-content { display: none; }
+    .difficulty-content.active { display: block; }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3 sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">AI Mastery Hub</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="ai.html">AI Basics</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ml.html">Machine Learning</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="dl.html">Deep Learning</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="genai.html">Generative AI</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero-bg text-center">
+    <div class="container position-relative">
+      <div class="row align-items-center">
+        <div class="col-lg-7 mx-auto">
+          <h1 class="display-4 fw-bold mb-3">Generative AI</h1>
+          <p class="lead mb-4">Learn how AI creates text, images, music, and more. From ChatGPT to DALL-E, understand the technology behind the tools you use every day.</p>
+          <div class="d-flex justify-content-center gap-2 mb-3">
+            <span class="learning-level">Beginner Friendly</span>
+            <span class="learning-level">Step-by-Step</span>
+            <span class="learning-level">Real Examples</span>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="120" height="120" class="hero-illustration" style="color:#fff;">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a2 2 0 002-2V5z"/>
+      </svg>
+    </div>
+  </section>
+
+  <main class="container py-5">
+    <!-- Main GenAI Definition -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-8">
+        <div class="card p-4 bg-white text-dark shadow-sm">
+          <div class="text-center">
+            <span class="badge badge-tech mb-2">Generative AI</span>
+            <div class="feature-icon mb-2"><i class="bi bi-chat-dots"></i></div>
+            <h1 class="card-title display-6 mb-3">Generative AI</h1>
+            <p class="lead">Think of Generative AI as a creative assistant that can write stories, draw pictures, compose music, and even create videos - just like a very talented human, but powered by computers.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Difficulty Level Navigation -->
+    <div class="content-section">
+      <div class="row justify-content-center mb-4">
+        <div class="col-lg-8 text-center">
+          <h2 class="fw-bold mb-3">Choose Your Learning Level</h2>
+          <p class="lead mb-4">Start with beginner content and advance when you're ready for more details</p>
+          <div class="btn-group" role="group" aria-label="Difficulty levels">
+            <button type="button" class="btn btn-primary active" onclick="showLevel('beginner')">Beginner</button>
+            <button type="button" class="btn btn-outline-primary" onclick="showLevel('intermediate')">Intermediate</button>
+            <button type="button" class="btn btn-outline-primary" onclick="showLevel('advanced')">Advanced</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Beginner Level Content -->
+    <div id="beginner-content" class="difficulty-content active">
+      <!-- What is Generative AI in Simple Terms -->
+      <div class="content-section">
+        <h2 class="fw-bold mb-4">What is Generative AI in Simple Terms?</h2>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card h-100 p-4">
+              <h5 class="fw-bold text-primary mb-3"><i class="bi bi-lightbulb me-2"></i>AI is Like a Creative Assistant</h5>
+              <p>Imagine you have a very smart friend who has read millions of books, seen millions of pictures, and listened to millions of songs. When you ask them to:</p>
+              <ul>
+                <li><strong>Write a story</strong> - They use what they've learned from all those books</li>
+                <li><strong>Draw a picture</strong> - They use what they've learned from all those images</li>
+                <li><strong>Compose music</strong> - They use what they've learned from all those songs</li>
+              </ul>
+              <p>Generative AI works the same way, but it's a computer that has been trained on massive amounts of data!</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100 p-4">
+              <h5 class="fw-bold text-primary mb-3"><i class="bi bi-people me-2"></i>Generative AI Helps Create Content</h5>
+              <p>Generative AI doesn't just understand information - it creates new content. For example:</p>
+              <ul>
+                <li><strong>ChatGPT:</strong> Writes stories, answers questions, and helps with writing</li>
+                <li><strong>DALL-E:</strong> Creates images from text descriptions</li>
+                <li><strong>Music AI:</strong> Composes original music in different styles</li>
+                <li><strong>Video AI:</strong> Creates short videos and animations</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- How Generative AI Works Step by Step -->
+      <div class="content-section">
+        <h2 class="fw-bold mb-4">How Generative AI Works - Step by Step</h2>
+        <div class="row g-4">
+          <div class="col-md-3">
+            <div class="card h-100 p-4 text-center">
+              <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 50px; height: 50px; font-size: 1.2rem; font-weight: bold;">1</div>
+              <h6 class="fw-bold">Learn from Examples</h6>
+              <p class="small">The AI studies millions of examples (text, images, music) to understand patterns and styles.</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card h-100 p-4 text-center">
+              <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 50px; height: 50px; font-size: 1.2rem; font-weight: bold;">2</div>
+              <h6 class="fw-bold">Understand Patterns</h6>
+              <p class="small">It learns what words go together, what makes a good image, and what sounds pleasant.</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card h-100 p-4 text-center">
+              <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 50px; height: 50px; font-size: 1.2rem; font-weight: bold;">3</div>
+              <h6 class="fw-bold">Generate New Content</h6>
+              <p class="small">When you give it a prompt, it creates something new based on what it learned.</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card h-100 p-4 text-center">
+              <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 50px; height: 50px; font-size: 1.2rem; font-weight: bold;">4</div>
+              <h6 class="fw-bold">Improve Over Time</h6>
+              <p class="small">The more it practices and gets feedback, the better it becomes at creating content.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Generative AI Applications -->
+      <div class="content-section">
+        <h2 class="fw-bold mb-4">Generative AI Applications in Modern Technology</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 p-4 text-center">
+              <i class="bi bi-chat-dots feature-icon"></i>
+              <h5 class="fw-bold mb-3">Text Generation</h5>
+              <p>ChatGPT, Claude, and other AI chatbots can write stories, answer questions, and help with various writing tasks.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 p-4 text-center">
+              <i class="bi bi-image feature-icon"></i>
+              <h5 class="fw-bold mb-3">Image Creation</h5>
+              <p>DALL-E, Midjourney, and Stable Diffusion create images from text descriptions - like having an artist who can draw anything you describe.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 p-4 text-center">
+              <i class="bi bi-music-note feature-icon"></i>
+              <h5 class="fw-bold mb-3">Music & Audio</h5>
+              <p>AI can compose music, generate voices, and create sound effects - like having a composer and sound designer in your pocket.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 p-4 text-center">
+              <i class="bi bi-camera-video feature-icon"></i>
+              <h5 class="fw-bold mb-3">Video Generation</h5>
+              <p>AI tools can create short videos, animations, and even edit existing footage with simple text prompts.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 p-4 text-center">
+              <i class="bi bi-code-slash feature-icon"></i>
+              <h5 class="fw-bold mb-3">Code Generation</h5>
+              <p>AI can help write computer code, debug programs, and explain how code works in simple terms.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 p-4 text-center">
+              <i class="bi bi-translate feature-icon"></i>
+              <h5 class="fw-bold mb-3">Language Translation</h5>
+              <p>AI can translate between languages, summarize documents, and help with communication across different cultures.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Common Myths -->
+      <div class="content-section">
+        <h2 class="fw-bold mb-4">Common Myths About Generative AI</h2>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card h-100 p-4 border-start border-warning border-4">
+              <h5 class="fw-bold text-warning mb-3"><i class="bi bi-exclamation-triangle me-2"></i>Myth: AI is "stealing" from artists</h5>
+              <p class="mb-3"><strong>Reality:</strong> AI learns patterns from data, just like humans learn from studying art, music, and literature. It doesn't copy specific works but learns general styles and techniques.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100 p-4 border-start border-info border-4">
+              <h5 class="fw-bold text-info mb-3"><i class="bi bi-lightbulb me-2"></i>Myth: AI will replace all creative jobs</h5>
+              <p class="mb-3"><strong>Reality:</strong> AI is a tool that can help creators work faster and explore new ideas. It's more like having a creative assistant than a replacement.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100 p-4 border-start border-success border-4">
+              <h5 class="fw-bold text-success mb-3"><i class="bi bi-shield-check me-2"></i>Myth: AI-generated content is always perfect</h5>
+              <p class="mb-3"><strong>Reality:</strong> AI can make mistakes, create unrealistic content, or produce biased results. Human review and editing are still important.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100 p-4 border-start border-primary border-4">
+              <h5 class="fw-bold text-primary mb-3"><i class="bi bi-people me-2"></i>Myth: Only tech experts can use AI</h5>
+              <p class="mb-3"><strong>Reality:</strong> Many AI tools are designed to be user-friendly. You can start using them with simple text prompts - no technical knowledge required!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Intermediate Level Content -->
+    <div id="intermediate-content" class="difficulty-content">
+      <div class="content-section">
+        <h2 class="fw-bold mb-4">Understanding Generative AI Technology</h2>
+        <p class="lead mb-4">Dive deeper into how generative AI models work and the different types available today.</p>
+
+        <!-- Types of Generative AI -->
+        <div class="content-section">
+          <h3 class="fw-bold mb-4">Types of Generative AI Models</h3>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="card h-100 p-4">
+                <h5 class="fw-bold text-primary mb-3"><i class="bi bi-chat-text me-2"></i>Large Language Models (LLMs)</h5>
+                <p class="mb-3"><strong>Examples:</strong> GPT-4, Claude, LLaMA</p>
+                <p class="mb-3"><strong>What they do:</strong> Generate text, translate languages, write code, answer questions</p>
+                <p class="mb-3"><strong>How they work:</strong> Trained on massive amounts of text data to understand language patterns and context</p>
+                <ul class="small">
+                  <li>Can write essays, stories, and articles</li>
+                  <li>Help with programming and debugging</li>
+                  <li>Provide explanations and tutoring</li>
+                  <li>Generate creative content like poetry</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card h-100 p-4">
+                <h5 class="fw-bold text-success mb-3"><i class="bi bi-image me-2"></i>Image Generation Models</h5>
+                <p class="mb-3"><strong>Examples:</strong> DALL-E, Midjourney, Stable Diffusion</p>
+                <p class="mb-3"><strong>What they do:</strong> Create images from text descriptions</p>
+                <p class="mb-3"><strong>How they work:</strong> Trained on millions of image-text pairs to understand visual concepts</p>
+                <ul class="small">
+                  <li>Generate artwork and illustrations</li>
+                  <li>Create product mockups and designs</li>
+                  <li>Produce realistic or artistic photos</li>
+                  <li>Edit and modify existing images</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card h-100 p-4">
+                <h5 class="fw-bold text-info mb-3"><i class="bi bi-music-note me-2"></i>Audio Generation Models</h5>
+                <p class="mb-3"><strong>Examples:</strong> MusicLM, AudioCraft, Whisper</p>
+                <p class="mb-3"><strong>What they do:</strong> Generate music, speech, and sound effects</p>
+                <p class="mb-3"><strong>How they work:</strong> Trained on audio data to understand musical patterns and speech</p>
+                <ul class="small">
+                  <li>Compose original music in various styles</li>
+                  <li>Generate realistic speech synthesis</li>
+                  <li>Create sound effects and ambient audio</li>
+                  <li>Transcribe and translate speech</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card h-100 p-4">
+                <h5 class="fw-bold text-warning mb-3"><i class="bi bi-camera-video me-2"></i>Video Generation Models</h5>
+                <p class="mb-3"><strong>Examples:</strong> Runway, Pika Labs, Stable Video</p>
+                <p class="mb-3"><strong>What they do:</strong> Create videos from text or image prompts</p>
+                <p class="mb-3"><strong>How they work:</strong> Advanced models that understand both spatial and temporal relationships</p>
+                <ul class="small">
+                  <li>Generate short video clips</li>
+                  <li>Create animated sequences</li>
+                  <li>Produce marketing and promotional content</li>
+                  <li>Generate educational and training videos</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Popular Tools and Platforms -->
+        <div class="content-section">
+          <h3 class="fw-bold mb-4">Popular Generative AI Tools</h3>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="card h-100 p-4">
+                <h5 class="fw-bold text-primary mb-3">Text Generation</h5>
+                <div class="row g-3">
+                  <div class="col-12">
+                    <h6 class="fw-bold">ChatGPT (OpenAI)</h6>
+                    <p class="small mb-2">Most popular AI chatbot for conversation, writing, and problem-solving</p>
+                    <span class="badge bg-primary">Free & Paid</span>
+                  </div>
+                  <div class="col-12">
+                    <h6 class="fw-bold">Claude (Anthropic)</h6>
+                    <p class="small mb-2">Known for safety and helpfulness, good for analysis and writing</p>
+                    <span class="badge bg-primary">Free & Paid</span>
+                  </div>
+                  <div class="col-12">
+                    <h6 class="fw-bold">Google Gemini</h6>
+                    <p class="small mb-2">Google's AI assistant with strong reasoning capabilities</p>
+                    <span class="badge bg-primary">Free & Paid</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card h-100 p-4">
+                <h5 class="fw-bold text-success mb-3">Image Generation</h5>
+                <div class="row g-3">
+                  <div class="col-12">
+                    <h6 class="fw-bold">DALL-E (OpenAI)</h6>
+                    <p class="small mb-2">High-quality image generation with good prompt understanding</p>
+                    <span class="badge bg-success">Paid</span>
+                  </div>
+                  <div class="col-12">
+                    <h6 class="fw-bold">Midjourney</h6>
+                    <p class="small mb-2">Artistic and creative image generation, popular with artists</p>
+                    <span class="badge bg-success">Paid</span>
+                  </div>
+                  <div class="col-12">
+                    <h6 class="fw-bold">Stable Diffusion</h6>
+                    <p class="small mb-2">Open-source image generation, can run locally</p>
+                    <span class="badge bg-success">Free & Paid</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Advanced Level Content -->
+    <div id="advanced-content" class="difficulty-content">
+      <div class="content-section">
+        <h2 class="fw-bold mb-4">Advanced Generative AI Concepts</h2>
+        <p class="lead mb-4">Deep dive into the technical architecture, challenges, and future directions of generative AI.</p>
+
+        <!-- Technical Architecture -->
+        <div class="content-section">
+          <h3 class="fw-bold mb-4">Technical Architecture Deep Dive</h3>
+          <div class="row g-4">
+            <div class="col-lg-8 mx-auto">
+              <div class="card p-4">
+                <h5 class="fw-bold mb-3">Transformer Architecture</h5>
+                <p class="mb-3">Most modern generative AI models use the Transformer architecture, which revolutionized natural language processing.</p>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <h6 class="fw-bold text-primary">Key Components:</h6>
+                    <ul class="small">
+                      <li><strong>Self-Attention:</strong> Allows the model to focus on relevant parts of the input</li>
+                      <li><strong>Multi-Head Attention:</strong> Multiple attention mechanisms working in parallel</li>
+                      <li><strong>Positional Encoding:</strong> Helps the model understand word order</li>
+                      <li><strong>Feed-Forward Networks:</strong> Processes information through neural layers</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <h6 class="fw-bold text-success">Advantages:</h6>
+                    <ul class="small">
+                      <li>Parallel processing capability</li>
+                      <li>Better handling of long sequences</li>
+                      <li>Captures complex relationships</li>
+                      <li>Scalable to very large models</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Challenges and Limitations -->
+        <div class="content-section">
+          <h3 class="fw-bold mb-4">Current Challenges and Limitations</h3>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="card h-100 p-4 border-start border-warning border-4">
+                <h5 class="fw-bold text-warning mb-3">Technical Challenges</h5>
+                <ul class="mb-3">
+                  <li><strong>Hallucination:</strong> Models can generate false or misleading information</li>
+                  <li><strong>Bias:</strong> Training data biases can lead to unfair or harmful outputs</li>
+                  <li><strong>Consistency:</strong> Difficulty maintaining logical consistency in long outputs</li>
+                  <li><strong>Computational Cost:</strong> Training and running large models requires significant resources</li>
+                  <li><strong>Context Limits:</strong> Models have maximum input/output length restrictions</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card h-100 p-4 border-start border-info border-4">
+                <h5 class="fw-bold text-info mb-3">Ethical and Social Challenges</h5>
+                <ul class="mb-3">
+                  <li><strong>Misinformation:</strong> Potential for creating convincing fake content</li>
+                  <li><strong>Copyright:</strong> Questions about training on copyrighted material</li>
+                  <li><strong>Job Displacement:</strong> Impact on creative and knowledge work</li>
+                  <li><strong>Privacy:</strong> Concerns about data used in training</li>
+                  <li><strong>Accessibility:</strong> Ensuring benefits are available to all communities</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Industry Applications -->
+        <div class="content-section">
+          <h3 class="fw-bold mb-4">Advanced Industry Applications</h3>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="card h-100 p-4">
+                <h5 class="fw-bold text-primary mb-3">Healthcare</h5>
+                <ul class="mb-3">
+                  <li><strong>Drug Discovery:</strong> Generating molecular structures for new medications</li>
+                  <li><strong>Medical Imaging:</strong> Creating synthetic medical images for training</li>
+                  <li><strong>Clinical Documentation:</strong> Automating medical report generation</li>
+                  <li><strong>Personalized Medicine:</strong> Tailoring treatments based on patient data</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card h-100 p-4">
+                <h5 class="fw-bold text-success mb-3">Finance</h5>
+                <ul class="mb-3">
+                  <li><strong>Risk Assessment:</strong> Generating scenarios for stress testing</li>
+                  <li><strong>Document Processing:</strong> Automating financial document analysis</li>
+                  <li><strong>Customer Service:</strong> AI-powered financial advisors</li>
+                  <li><strong>Fraud Detection:</strong> Generating synthetic data for training</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card h-100 p-4">
+                <h5 class="fw-bold text-info mb-3">Education</h5>
+                <ul class="mb-3">
+                  <li><strong>Personalized Learning:</strong> Adaptive content generation</li>
+                  <li><strong>Assessment:</strong> Creating diverse test questions</li>
+                  <li><strong>Content Creation:</strong> Educational materials and explanations</li>
+                  <li><strong>Language Learning:</strong> Conversational practice partners</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card h-100 p-4">
+                <h5 class="fw-bold text-warning mb-3">Entertainment</h5>
+                <ul class="mb-3">
+                  <li><strong>Content Creation:</strong> Scripts, music, and visual effects</li>
+                  <li><strong>Personalization:</strong> Tailored entertainment experiences</li>
+                  <li><strong>Interactive Media:</strong> Dynamic storytelling and games</li>
+                  <li><strong>Localization:</strong> Automated translation and dubbing</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-bg py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="footer-logo mb-3">AI Mastery <span>Hub</span></div>
+          <p class="small">Making AI accessible to everyone through clear, simple explanations.</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <p class="small mb-0">&copy; 2024 AI Mastery Hub. All rights reserved.</p>
+          <p class="small mb-0">Built with ❤️ for learners everywhere</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function showLevel(level) {
+      // Hide all content sections
+      const contents = document.querySelectorAll('.difficulty-content');
+      contents.forEach(content => {
+        content.classList.remove('active');
+      });
+      
+      // Show selected content
+      document.getElementById(level + '-content').classList.add('active');
+      
+      // Update button states
+      const buttons = document.querySelectorAll('.btn-group .btn');
+      buttons.forEach(btn => {
+        btn.classList.remove('active', 'btn-primary');
+        btn.classList.add('btn-outline-primary');
+      });
+      
+      // Find the clicked button and update its state
+      const clickedButton = event.target;
+      clickedButton.classList.remove('btn-outline-primary');
+      clickedButton.classList.add('active', 'btn-primary');
+    }
+  </script>
+</body>
+</html> 
