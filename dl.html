@@ -20,6 +20,9 @@
     .footer-title { color: #fff; font-weight: 700; font-size: 1.1em; margin-bottom: 0.7em; }
     .footer-logo { font-weight: 800; color: #fff; font-size: 1.3em; letter-spacing: 1px; }
     .footer-logo span { color: #754ffe; }
+    .content-section { margin-bottom: 3rem; }
+    .application-card { border-left: 4px solid #754ffe; }
+    .neural-network-item { background: #f8f9fa; border-radius: 0.5rem; padding: 1rem; margin-bottom: 1rem; }
   </style>
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
@@ -45,22 +48,437 @@
   <section class="hero-bg text-center">
     <div class="container position-relative">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="120" height="120" class="hero-illustration" style="color:#fff;">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 20h9"/>
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m0 0c-4.418 0-8-1.79-8-4V10m8 10c4.418 0 8-1.79 8-4V10"/>
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"/>
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
       </svg>
       <h1 class="display-5 fw-bold mb-2">Deep Learning</h1>
-      <p class="lead mb-0">Dive into neural networks and advanced pattern recognition.</p>
+      <p class="lead mb-0">Explore neural networks and advanced AI systems.</p>
     </div>
   </section>
   <main class="container py-5">
-    <div class="row justify-content-center">
+    
+    <!-- What is DL in Simple Terms -->
+    <div class="content-section">
+      <div class="row justify-content-center mb-4">
+        <div class="col-lg-8 text-center">
+          <span class="badge badge-tech mb-2">Beginner</span>
+          <h2 class="fw-bold mb-3">What is Deep Learning in Simple Terms?</h2>
+          <p class="lead">Deep Learning is like giving a computer a super-powered brain with many layers of thinking!</p>
+        </div>
+      </div>
+      
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100 p-4">
+            <h5 class="fw-bold text-primary mb-3"><i class="bi bi-lightbulb me-2"></i>Simple Analogy</h5>
+            <p><strong>Deep Learning is like a multi-layered brain.</strong> Imagine teaching a computer to recognize a cat. Instead of just looking at the whole picture, it looks at edges first, then shapes, then patterns, then finally recognizes "this is a cat!" Each layer builds on the previous one, just like how your brain processes information.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100 p-4">
+            <h5 class="fw-bold text-primary mb-3"><i class="bi bi-layers me-2"></i>Why "Deep"?</h5>
+            <div class="row">
+              <div class="col-6">
+                <h6 class="fw-bold text-info">Traditional ML:</h6>
+                <ul class="small">
+                  <li>1-2 layers</li>
+                  <li>Simple patterns</li>
+                  <li>Manual features</li>
+                  <li>Limited complexity</li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <h6 class="fw-bold text-success">Deep Learning:</h6>
+                <ul class="small">
+                  <li>Many layers (10-100+)</li>
+                  <li>Complex patterns</li>
+                  <li>Automatic features</li>
+                  <li>High complexity</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Visual Representation of Neural Networks -->
+    <div class="content-section">
+      <div class="row justify-content-center mb-4">
+        <div class="col-lg-8 text-center">
+          <span class="badge badge-tech mb-2">Understanding</span>
+          <h2 class="fw-bold mb-3">How Neural Networks Work</h2>
+          <p class="lead">Think of neural networks like a team of specialists working together</p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 p-4 text-center">
+            <div class="bg-info text-white rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 60px; height: 60px; font-size: 1.5rem; font-weight: bold;">👁️</div>
+            <h6 class="fw-bold">Input Layer</h6>
+            <p class="small mb-0">Receives the data (like pixels from an image)</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 p-4 text-center">
+            <div class="bg-warning text-white rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 60px; height: 60px; font-size: 1.5rem; font-weight: bold;">🧠</div>
+            <h6 class="fw-bold">Hidden Layers</h6>
+            <p class="small mb-0">Process and learn patterns (like detecting edges, shapes, features)</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 p-4 text-center">
+            <div class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 60px; height: 60px; font-size: 1.5rem; font-weight: bold;">🎯</div>
+            <h6 class="fw-bold">Output Layer</h6>
+            <p class="small mb-0">Gives the final answer (like "this is a cat")</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Deep Learning vs Traditional ML -->
+    <div class="content-section">
+      <div class="row justify-content-center mb-4">
+        <div class="col-lg-8 text-center">
+          <span class="badge badge-tech mb-2">Comparison</span>
+          <h2 class="fw-bold mb-3">Deep Learning vs Traditional Machine Learning</h2>
+          <p class="lead">When should you use deep learning vs traditional ML?</p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100 p-4 border-start border-info border-4">
+            <h5 class="fw-bold text-info mb-3"><i class="bi bi-graph-up me-2"></i>Traditional Machine Learning</h5>
+            <h6 class="fw-bold">Best for:</h6>
+            <ul class="mb-3">
+              <li>Small to medium datasets</li>
+              <li>Structured data (tables, spreadsheets)</li>
+              <li>Simple patterns</li>
+              <li>When you need interpretability</li>
+              <li>Limited computing resources</li>
+            </ul>
+            <h6 class="fw-bold">Examples:</h6>
+            <ul class="small">
+              <li>Predicting house prices</li>
+              <li>Spam detection</li>
+              <li>Customer segmentation</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100 p-4 border-start border-success border-4">
+            <h5 class="fw-bold text-success mb-3"><i class="bi bi-diagram-3 me-2"></i>Deep Learning</h5>
+            <h6 class="fw-bold">Best for:</h6>
+            <ul class="mb-3">
+              <li>Large datasets</li>
+              <li>Unstructured data (images, text, audio)</li>
+              <li>Complex patterns</li>
+              <li>When accuracy is crucial</li>
+              <li>Access to powerful computers</li>
+            </ul>
+            <h6 class="fw-bold">Examples:</h6>
+            <ul class="small">
+              <li>Image recognition</li>
+              <li>Natural language processing</li>
+              <li>Speech recognition</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Try This Section -->
+    <div class="content-section">
+      <div class="row justify-content-center mb-4">
+        <div class="col-lg-8 text-center">
+          <span class="badge badge-tech mb-2">Interactive</span>
+          <h2 class="fw-bold mb-3">Try This: Experience Deep Learning!</h2>
+          <p class="lead">Here are some ways to see deep learning in action</p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100 p-4 border-start border-warning border-4">
+            <h5 class="fw-bold text-warning mb-3"><i class="bi bi-camera me-2"></i>Image Recognition</h5>
+            <ul class="mb-3">
+              <li><strong>Google Lens:</strong> Point camera at objects</li>
+              <li><strong>Face ID:</strong> Unlock phone with face</li>
+              <li><strong>Photo Apps:</strong> Auto-tag people in photos</li>
+              <li><strong>Medical Imaging:</strong> AI detects diseases in X-rays</li>
+            </ul>
+            <small class="text-muted">All powered by deep learning!</small>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100 p-4 border-start border-warning border-4">
+            <h5 class="fw-bold text-warning mb-3"><i class="bi bi-chat-dots me-2"></i>Language & Speech</h5>
+            <ul class="mb-3">
+              <li><strong>ChatGPT:</strong> AI conversations</li>
+              <li><strong>Voice Assistants:</strong> Siri, Alexa, Google</li>
+              <li><strong>Translation:</strong> Real-time language translation</li>
+              <li><strong>Text Generation:</strong> Auto-complete and suggestions</li>
+            </ul>
+            <small class="text-muted">Deep learning understands language!</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main DL Definition -->
+    <div class="row justify-content-center mb-5">
       <div class="col-lg-8">
         <div class="card p-4 bg-white text-dark shadow-sm">
           <div class="text-center">
             <span class="badge badge-tech mb-2">DL</span>
             <div class="feature-icon mb-2"><i class="bi bi-diagram-3"></i></div>
             <h1 class="card-title display-6 mb-3">Deep Learning</h1>
+            <p class="lead">Deep Learning is a type of Machine Learning that teaches computers to learn from large amounts of data, similar to how humans recognize patterns. It uses neural networks with multiple layers to process information and make decisions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- What is Deep Learning -->
+    <div class="content-section">
+      <h2 class="fw-bold mb-4">What is Deep Learning?</h2>
+      <div class="row g-4">
+        <div class="col-md-8">
+          <div class="card p-4">
+            <h5 class="fw-bold text-primary mb-3"><i class="bi bi-brain me-2"></i>Understanding Deep Learning</h5>
+            <p>Deep Learning is a subset of machine learning that uses artificial neural networks with multiple layers (hence "deep") to model and understand complex patterns in data. These neural networks are inspired by the human brain's structure and function.</p>
+            <p>This technology powers things like voice assistants, self-driving cars, and medical diagnosis, making AI smarter and more useful in everyday life. Deep Learning is making everyday technology smarter and more useful.</p>
+            <p>As deep learning continues to improve, it will make technology even more helpful in daily life.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-4">
+            <h6 class="fw-bold text-primary mb-3">Key Characteristics:</h6>
+            <ul class="small">
+              <li>Multiple neural network layers</li>
+              <li>Automatic feature extraction</li>
+              <li>Requires large datasets</li>
+              <li>Computationally intensive</li>
+              <li>Excellent for complex patterns</li>
+              <li>State-of-the-art performance</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Deep Learning Applications -->
+    <div class="content-section">
+      <h2 class="fw-bold mb-4">How Deep Learning is Used Today</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100 p-4 application-card">
+            <h5 class="fw-bold text-primary mb-3"><i class="bi bi-eye me-2"></i>Computer Vision</h5>
+            <p>Helps with facial recognition, medical imaging, and identifying objects in photos. Deep learning models can analyze images with remarkable accuracy, enabling applications like:</p>
+            <ul class="small">
+              <li>Medical diagnosis from X-rays and MRIs</li>
+              <li>Autonomous vehicle perception</li>
+              <li>Quality control in manufacturing</li>
+              <li>Security and surveillance systems</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100 p-4 application-card">
+            <h5 class="fw-bold text-primary mb-3"><i class="bi bi-chat-dots me-2"></i>Language Understanding</h5>
+            <p>Powers chatbots, voice assistants, and real-time translation tools. Natural Language Processing (NLP) models can:</p>
+            <ul class="small">
+              <li>Understand and generate human language</li>
+              <li>Translate between languages</li>
+              <li>Summarize long documents</li>
+              <li>Answer questions intelligently</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100 p-4 application-card">
+            <h5 class="fw-bold text-primary mb-3"><i class="bi bi-car-front me-2"></i>Self-Driving Technology</h5>
+            <p>Helps cars and robots navigate without human control. Deep learning enables:</p>
+            <ul class="small">
+              <li>Real-time object detection</li>
+              <li>Path planning and navigation</li>
+              <li>Traffic sign recognition</li>
+              <li>Predictive behavior modeling</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100 p-4 application-card">
+            <h5 class="fw-bold text-primary mb-3"><i class="bi bi-heart-pulse me-2"></i>Healthcare</h5>
+            <p>Assists doctors in detecting diseases and personalizing treatments. Applications include:</p>
+            <ul class="small">
+              <li>Medical image analysis</li>
+              <li>Drug discovery and development</li>
+              <li>Patient outcome prediction</li>
+              <li>Personalized medicine</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100 p-4 application-card">
+            <h5 class="fw-bold text-primary mb-3"><i class="bi bi-shield-check me-2"></i>Fraud Prevention</h5>
+            <p>Protects online payments by spotting unusual activity. Deep learning models can:</p>
+            <ul class="small">
+              <li>Detect fraudulent transactions</li>
+              <li>Identify suspicious patterns</li>
+              <li>Prevent identity theft</li>
+              <li>Monitor network security</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100 p-4 application-card">
+            <h5 class="fw-bold text-primary mb-3"><i class="bi bi-music-note me-2"></i>Creative AI</h5>
+            <p>Generates art, music, and content. Deep learning enables:</p>
+            <ul class="small">
+              <li>Image and video generation</li>
+              <li>Music composition</li>
+              <li>Text-to-speech synthesis</li>
+              <li>Style transfer and filters</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Neural Network Types -->
+    <div class="content-section">
+      <h2 class="fw-bold mb-4">Types of Neural Networks</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card p-4 shadow-sm">
+            <h6 class="fw-bold mb-2 text-primary"><i class="bi bi-layers me-2"></i>Convolutional Neural Networks (CNNs)</h6>
+            <p class="mb-0 text-dark">Specialized for processing grid-like data such as images. Use convolutional layers to detect features like edges, textures, and patterns.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-4 shadow-sm">
+            <h6 class="fw-bold mb-2 text-primary"><i class="bi bi-arrow-repeat me-2"></i>Recurrent Neural Networks (RNNs)</h6>
+            <p class="mb-0 text-dark">Designed for sequential data like text and speech. Can maintain memory of previous inputs through hidden states.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-4 shadow-sm">
+            <h6 class="fw-bold mb-2 text-primary"><i class="bi bi-diagram-3 me-2"></i>Long Short-Term Memory (LSTM)</h6>
+            <p class="mb-0 text-dark">Advanced RNN architecture that can learn long-term dependencies in sequential data, solving the vanishing gradient problem.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-4 shadow-sm">
+            <h6 class="fw-bold mb-2 text-primary"><i class="bi bi-translate me-2"></i>Transformer Networks</h6>
+            <p class="mb-0 text-dark">Revolutionary architecture using attention mechanisms, powering models like GPT and BERT for natural language processing.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-4 shadow-sm">
+            <h6 class="fw-bold mb-2 text-primary"><i class="bi bi-arrow-left-right me-2"></i>Generative Adversarial Networks (GANs)</h6>
+            <p class="mb-0 text-dark">Consist of two competing networks - a generator and discriminator - used for creating realistic synthetic data.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-4 shadow-sm">
+            <h6 class="fw-bold mb-2 text-primary"><i class="bi bi-graph-up me-2"></i>Autoencoders</h6>
+            <p class="mb-0 text-dark">Neural networks that learn to compress and reconstruct data, useful for dimensionality reduction and feature learning.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Deep Learning Frameworks -->
+    <div class="content-section">
+      <h2 class="fw-bold mb-4">Popular Deep Learning Frameworks</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 p-4 text-center">
+            <i class="bi bi-google feature-icon"></i>
+            <h5 class="fw-bold mb-3">TensorFlow</h5>
+            <p>Google's open-source framework for machine learning and deep learning. Widely used in production environments.</p>
+            <div class="mt-3">
+              <span class="badge bg-primary me-1">Production</span>
+              <span class="badge bg-secondary me-1">Mobile</span>
+              <span class="badge bg-info">Research</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 p-4 text-center">
+            <i class="bi bi-facebook feature-icon"></i>
+            <h5 class="fw-bold mb-3">PyTorch</h5>
+            <p>Facebook's deep learning framework known for its dynamic computational graphs and research-friendly design.</p>
+            <div class="mt-3">
+              <span class="badge bg-primary me-1">Research</span>
+              <span class="badge bg-secondary me-1">Flexible</span>
+              <span class="badge bg-info">Python</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 p-4 text-center">
+            <i class="bi bi-layers feature-icon"></i>
+            <h5 class="fw-bold mb-3">Keras</h5>
+            <p>High-level neural network API that runs on top of TensorFlow. Known for its simplicity and ease of use.</p>
+            <div class="mt-3">
+              <span class="badge bg-primary me-1">Beginner</span>
+              <span class="badge bg-secondary me-1">Simple</span>
+              <span class="badge bg-info">Prototyping</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Industry Applications -->
+    <div class="content-section">
+      <h2 class="fw-bold mb-4">Deep Learning in Industry</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card p-4">
+            <h5 class="fw-bold text-primary mb-3"><i class="bi bi-bank me-2"></i>Financial Services</h5>
+            <ul>
+              <li><strong>Algorithmic Trading:</strong> Pattern recognition in market data</li>
+              <li><strong>Risk Assessment:</strong> Credit scoring and fraud detection</li>
+              <li><strong>Customer Service:</strong> Intelligent chatbots and virtual assistants</li>
+              <li><strong>Compliance:</strong> Automated regulatory reporting</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-4">
+            <h5 class="fw-bold text-primary mb-3"><i class="bi bi-truck me-2"></i>Manufacturing</h5>
+            <ul>
+              <li><strong>Predictive Maintenance:</strong> Equipment failure prediction</li>
+              <li><strong>Quality Control:</strong> Automated defect detection</li>
+              <li><strong>Supply Chain:</strong> Demand forecasting and optimization</li>
+              <li><strong>Robotics:</strong> Autonomous manufacturing systems</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-4">
+            <h5 class="fw-bold text-primary mb-3"><i class="bi bi-broadcast me-2"></i>Entertainment</h5>
+            <ul>
+              <li><strong>Content Recommendation:</strong> Netflix, Spotify algorithms</li>
+              <li><strong>Content Creation:</strong> AI-generated art and music</li>
+              <li><strong>Gaming:</strong> NPC behavior and procedural generation</li>
+              <li><strong>Virtual Reality:</strong> Immersive experiences</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-4">
+            <h5 class="fw-bold text-primary mb-3"><i class="bi bi-globe me-2"></i>Retail & E-commerce</h5>
+            <ul>
+              <li><strong>Personalization:</strong> Product recommendations</li>
+              <li><strong>Inventory Management:</strong> Demand prediction</li>
+              <li><strong>Customer Analytics:</strong> Behavior analysis</li>
+              <li><strong>Visual Search:</strong> Image-based product search</li>
+            </ul>
           </div>
         </div>
       </div>

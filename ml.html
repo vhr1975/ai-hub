@@ -20,6 +20,9 @@
     .footer-title { color: #fff; font-weight: 700; font-size: 1.1em; margin-bottom: 0.7em; }
     .footer-logo { font-weight: 800; color: #fff; font-size: 1.3em; letter-spacing: 1px; }
     .footer-logo span { color: #754ffe; }
+    .content-section { margin-bottom: 3rem; }
+    .learning-type-card { border-left: 4px solid #754ffe; }
+    .tech-tool-item { background: #f8f9fa; border-radius: 0.5rem; padding: 1rem; margin-bottom: 1rem; }
   </style>
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
@@ -52,13 +55,348 @@
     </div>
   </section>
   <main class="container py-5">
-    <div class="row justify-content-center">
+    
+    <!-- What is ML in Simple Terms -->
+    <div class="content-section">
+      <div class="row justify-content-center mb-4">
+        <div class="col-lg-8 text-center">
+          <span class="badge badge-tech mb-2">Beginner</span>
+          <h2 class="fw-bold mb-3">What is Machine Learning in Simple Terms?</h2>
+          <p class="lead">Machine Learning is like teaching a computer to learn from examples, just like how you learned to recognize a cat!</p>
+        </div>
+      </div>
+      
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100 p-4">
+            <h5 class="fw-bold text-primary mb-3"><i class="bi bi-lightbulb me-2"></i>Simple Analogy</h5>
+            <p><strong>ML is like teaching a computer to recognize cats.</strong> You show it thousands of cat pictures and say "this is a cat" for each one. After seeing enough examples, the computer learns to recognize cats in new pictures it has never seen before!</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100 p-4">
+            <h5 class="fw-bold text-primary mb-3"><i class="bi bi-graph-up me-2"></i>Before vs After ML</h5>
+            <div class="row">
+              <div class="col-6">
+                <h6 class="fw-bold text-danger">Before ML:</h6>
+                <ul class="small">
+                  <li>Manual rules</li>
+                  <li>Limited accuracy</li>
+                  <li>Hard to update</li>
+                  <li>Time-consuming</li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <h6 class="fw-bold text-success">After ML:</h6>
+                <ul class="small">
+                  <li>Learns automatically</li>
+                  <li>High accuracy</li>
+                  <li>Self-improving</li>
+                  <li>Fast processing</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- How ML Works - Visual Learning -->
+    <div class="content-section">
+      <div class="row justify-content-center mb-4">
+        <div class="col-lg-8 text-center">
+          <span class="badge badge-tech mb-2">Understanding</span>
+          <h2 class="fw-bold mb-3">How Machine Learning Works</h2>
+          <p class="lead">Let's see the learning process step by step</p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-3">
+          <div class="card h-100 p-4 text-center">
+            <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 60px; height: 60px; font-size: 1.5rem; font-weight: bold;">1</div>
+            <h6 class="fw-bold">Collect Data</h6>
+            <p class="small mb-0">Gather lots of examples (cat pictures, text, numbers, etc.)</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card h-100 p-4 text-center">
+            <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 60px; height: 60px; font-size: 1.5rem; font-weight: bold;">2</div>
+            <h6 class="fw-bold">Train Model</h6>
+            <p class="small mb-0">Show the computer patterns and let it learn the rules</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card h-100 p-4 text-center">
+            <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 60px; height: 60px; font-size: 1.5rem; font-weight: bold;">3</div>
+            <h6 class="fw-bold">Test & Validate</h6>
+            <p class="small mb-0">Check how well it works on new, unseen data</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card h-100 p-4 text-center">
+            <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 60px; height: 60px; font-size: 1.5rem; font-weight: bold;">4</div>
+            <h6 class="fw-bold">Deploy & Use</h6>
+            <p class="small mb-0">Use the trained model to make predictions</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Try This Section -->
+    <div class="content-section">
+      <div class="row justify-content-center mb-4">
+        <div class="col-lg-8 text-center">
+          <span class="badge badge-tech mb-2">Interactive</span>
+          <h2 class="fw-bold mb-3">Try This: Experience ML Right Now!</h2>
+          <p class="lead">Here are some simple ways to see machine learning in action</p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100 p-4 border-start border-warning border-4">
+            <h5 class="fw-bold text-warning mb-3"><i class="bi bi-phone me-2"></i>Your Phone's ML</h5>
+            <ul class="mb-3">
+              <li><strong>Face Recognition:</strong> Unlock your phone with your face</li>
+              <li><strong>Predictive Text:</strong> Type a message and see suggestions</li>
+              <li><strong>Voice Recognition:</strong> Use voice commands</li>
+              <li><strong>Photo Organization:</strong> Search photos by content</li>
+            </ul>
+            <small class="text-muted">All of these use machine learning!</small>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100 p-4 border-start border-warning border-4">
+            <h5 class="fw-bold text-warning mb-3"><i class="bi bi-globe me-2"></i>Online ML Examples</h5>
+            <ul class="mb-3">
+              <li><strong>Google Translate:</strong> Translate text between languages</li>
+              <li><strong>Netflix Recommendations:</strong> Check your suggested shows</li>
+              <li><strong>Gmail Smart Reply:</strong> Use quick response suggestions</li>
+              <li><strong>Google Photos:</strong> Search for objects in your photos</li>
+            </ul>
+            <small class="text-muted">Try these to see ML in action!</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main ML Definition -->
+    <div class="row justify-content-center mb-5">
       <div class="col-lg-8">
         <div class="card p-4 bg-white text-dark shadow-sm">
           <div class="text-center">
             <span class="badge badge-tech mb-2">ML</span>
             <div class="feature-icon mb-2"><i class="bi bi-graph-up"></i></div>
             <h1 class="card-title display-6 mb-3">Machine Learning</h1>
+            <p class="lead">A subfield of AI focused on algorithms that learn from data to make predictions or decisions without being explicitly programmed for specific tasks.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Learning Types -->
+    <div class="content-section">
+      <h2 class="fw-bold mb-4">Machine Learning Learning Types</h2>
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="card h-100 p-4 learning-type-card">
+            <div class="text-center mb-3">
+              <i class="bi bi-check-circle feature-icon"></i>
+              <h5 class="fw-bold">Supervised Learning</h5>
+            </div>
+            <p>Supervised learning consists of adding specific features for the algorithm. The features will help the algorithm to derive meaning and context from labeled training data.</p>
+            <div class="mt-3">
+              <h6 class="fw-bold text-primary">Common Applications:</h6>
+              <ul class="small">
+                <li>Image classification</li>
+                <li>Spam detection</li>
+                <li>Price prediction</li>
+                <li>Medical diagnosis</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card h-100 p-4 learning-type-card">
+            <div class="text-center mb-3">
+              <i class="bi bi-question-circle feature-icon"></i>
+              <h5 class="fw-bold">Unsupervised Learning</h5>
+            </div>
+            <p>Unsupervised learning does not provide features and allows the algorithm to learn the meaning and context on its own by finding hidden patterns in unlabeled data.</p>
+            <div class="mt-3">
+              <h6 class="fw-bold text-primary">Common Applications:</h6>
+              <ul class="small">
+                <li>Customer segmentation</li>
+                <li>Anomaly detection</li>
+                <li>Dimensionality reduction</li>
+                <li>Market basket analysis</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card h-100 p-4 learning-type-card">
+            <div class="text-center mb-3">
+              <i class="bi bi-arrow-repeat feature-icon"></i>
+              <h5 class="fw-bold">Reinforcement Learning</h5>
+            </div>
+            <p>Reinforcement Learning enables the algorithm to learn by interacting with an environment and receiving feedback through rewards or penalties. This helps the model improve decision-making over time.</p>
+            <div class="mt-3">
+              <h6 class="fw-bold text-primary">Common Applications:</h6>
+              <ul class="small">
+                <li>Game playing (AlphaGo)</li>
+                <li>Autonomous vehicles</li>
+                <li>Robot navigation</li>
+                <li>Trading systems</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- AI Vision Section -->
+    <div class="content-section">
+      <h2 class="fw-bold mb-4">AI Vision & Computer Vision</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card p-4">
+            <h5 class="fw-bold text-primary mb-3"><i class="bi bi-eye me-2"></i>What is AI Vision?</h5>
+            <p>AI vision refers to the ability of artificial intelligence systems to perceive and interpret visual information from the world around them. This includes tasks such as object recognition, image classification, and scene understanding.</p>
+            <p>With advances in machine learning and computer vision, AI vision is becoming increasingly sophisticated and is being applied in a wide range of industries, from healthcare to autonomous vehicles.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-4">
+            <h5 class="fw-bold text-primary mb-3"><i class="bi bi-camera me-2"></i>Computer Vision Applications</h5>
+            <ul>
+              <li><strong>Facial Recognition:</strong> Security systems and social media tagging</li>
+              <li><strong>Medical Imaging:</strong> X-ray analysis and disease detection</li>
+              <li><strong>Quality Control:</strong> Manufacturing defect detection</li>
+              <li><strong>Autonomous Vehicles:</strong> Road sign and obstacle detection</li>
+              <li><strong>Retail Analytics:</strong> Customer behavior tracking</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Learning Technology Section -->
+    <div class="content-section">
+      <h2 class="fw-bold mb-4">Machine Learning in Education Technology</h2>
+      <div class="row g-4">
+        <div class="col-md-8">
+          <div class="card p-4">
+            <h5 class="fw-bold text-primary mb-3"><i class="bi bi-mortarboard me-2"></i>Transforming Learning Technology</h5>
+            <p>Machine Learning is transforming learning technology by enabling personalized education, automated feedback, and adaptive learning paths. AI-driven tools like virtual tutors, chatbots, and recommendation systems enhance learning experiences, while speech and image recognition improve accessibility.</p>
+            <p>Platforms such as Coursera and Udemy leverage ML to suggest courses, and AI-powered assessments help identify skill gaps. The future of learning technology includes VR/AR integration, automated content creation, and AI-driven skill evaluations, making education more interactive and efficient.</p>
+            <p>Aspiring learners can explore ML through online courses, tutorials, and hands-on projects to stay ahead in this evolving field.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-4">
+            <h6 class="fw-bold text-primary mb-3">Key Benefits:</h6>
+            <ul class="small">
+              <li>Personalized learning paths</li>
+              <li>Automated grading and feedback</li>
+              <li>Intelligent tutoring systems</li>
+              <li>Content recommendation</li>
+              <li>Skill gap analysis</li>
+              <li>Adaptive assessments</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ML Tools and Frameworks -->
+    <div class="content-section">
+      <h2 class="fw-bold mb-4">Popular Machine Learning Tools & Frameworks</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card p-4 shadow-sm">
+            <h6 class="fw-bold mb-2 text-primary"><i class="bi bi-python me-2"></i>Python Libraries</h6>
+            <p class="mb-0 text-dark">Scikit-learn, Pandas, NumPy, Matplotlib, Seaborn for data manipulation and traditional ML algorithms.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-4 shadow-sm">
+            <h6 class="fw-bold mb-2 text-primary"><i class="bi bi-diagram-3 me-2"></i>Deep Learning Frameworks</h6>
+            <p class="mb-0 text-dark">TensorFlow, PyTorch, Keras for building and training neural networks and deep learning models.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-4 shadow-sm">
+            <h6 class="fw-bold mb-2 text-primary"><i class="bi bi-cloud me-2"></i>Cloud ML Services</h6>
+            <p class="mb-0 text-dark">AWS SageMaker, Google AI Platform, Azure Machine Learning for scalable ML model deployment.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-4 shadow-sm">
+            <h6 class="fw-bold mb-2 text-primary"><i class="bi bi-graph-up me-2"></i>AutoML Platforms</h6>
+            <p class="mb-0 text-dark">Google AutoML, H2O.ai, DataRobot for automated machine learning model development.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-4 shadow-sm">
+            <h6 class="fw-bold mb-2 text-primary"><i class="bi bi-database me-2"></i>Data Processing</h6>
+            <p class="mb-0 text-dark">Apache Spark, Hadoop, Apache Kafka for big data processing and real-time analytics.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-4 shadow-sm">
+            <h6 class="fw-bold mb-2 text-primary"><i class="bi bi-display me-2"></i>Visualization Tools</h6>
+            <p class="mb-0 text-dark">Tableau, Power BI, Plotly for data visualization and interactive dashboards.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ML Applications -->
+    <div class="content-section">
+      <h2 class="fw-bold mb-4">Machine Learning Applications</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 p-4 text-center">
+            <i class="bi bi-heart-pulse feature-icon"></i>
+            <h5 class="fw-bold mb-3">Healthcare</h5>
+            <p>Predictive analytics for disease diagnosis, drug discovery, personalized medicine, and medical image analysis.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 p-4 text-center">
+            <i class="bi bi-bank feature-icon"></i>
+            <h5 class="fw-bold mb-3">Finance</h5>
+            <p>Fraud detection, credit scoring, algorithmic trading, risk assessment, and customer segmentation.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 p-4 text-center">
+            <i class="bi bi-cart feature-icon"></i>
+            <h5 class="fw-bold mb-3">E-commerce</h5>
+            <p>Product recommendations, demand forecasting, price optimization, and customer behavior analysis.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 p-4 text-center">
+            <i class="bi bi-shield-check feature-icon"></i>
+            <h5 class="fw-bold mb-3">Cybersecurity</h5>
+            <p>Threat detection, malware analysis, network security monitoring, and user behavior analytics.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 p-4 text-center">
+            <i class="bi bi-car-front feature-icon"></i>
+            <h5 class="fw-bold mb-3">Transportation</h5>
+            <p>Route optimization, predictive maintenance, traffic prediction, and autonomous vehicle systems.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 p-4 text-center">
+            <i class="bi bi-phone feature-icon"></i>
+            <h5 class="fw-bold mb-3">Mobile Apps</h5>
+            <p>Voice assistants, image recognition, language translation, and personalized content delivery.</p>
           </div>
         </div>
       </div>

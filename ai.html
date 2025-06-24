@@ -20,6 +20,14 @@
     .footer-title { color: #fff; font-weight: 700; font-size: 1.1em; margin-bottom: 0.7em; }
     .footer-logo { font-weight: 800; color: #fff; font-size: 1.3em; letter-spacing: 1px; }
     .footer-logo span { color: #754ffe; }
+    .content-section { margin-bottom: 3rem; }
+    .tech-stack-item { background: #f8f9fa; border-radius: 0.5rem; padding: 1rem; margin-bottom: 1rem; border-left: 4px solid #754ffe; }
+    .learning-level { background: linear-gradient(45deg, #754ffe, #5a3fd8); color: white; padding: 0.3em 0.8em; border-radius: 1rem; font-size: 0.8em; font-weight: 600; }
+    .analogy-box { background: #e8f4fd; border-left: 4px solid #007bff; padding: 1rem; border-radius: 0.5rem; margin: 1rem 0; }
+    .try-this-box { background: #fff3cd; border: 1px solid #ffeaa7; border-radius: 0.5rem; padding: 1rem; margin: 1rem 0; }
+    .misconception-box { background: #f8d7da; border-left: 4px solid #dc3545; padding: 1rem; border-radius: 0.5rem; margin: 1rem 0; }
+    .step-box { background: #f8f9fa; border-radius: 0.5rem; padding: 1.5rem; margin: 1rem 0; border: 1px solid #e9ecef; }
+    .step-number { background: #754ffe; color: white; width: 30px; height: 30px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-weight: bold; margin-right: 1rem; }
   </style>
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
@@ -44,21 +52,360 @@
   </nav>
   <section class="hero-bg text-center">
     <div class="container position-relative">
+      <div class="row align-items-center">
+        <div class="col-lg-7 mx-auto">
+          <h1 class="display-4 fw-bold mb-3">Artificial Intelligence</h1>
+          <p class="lead mb-4">Your complete guide to understanding AI from beginner to expert</p>
+          <div class="d-flex justify-content-center gap-2 mb-3">
+            <span class="learning-level">Beginner Friendly</span>
+            <span class="learning-level">Step-by-Step</span>
+            <span class="learning-level">Real Examples</span>
+          </div>
+        </div>
+      </div>
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="120" height="120" class="hero-illustration" style="color:#fff;">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0v6m0 0c-4.418 0-8-1.79-8-4V10m8 10c4.418 0 8-1.79 8-4V10"/>
       </svg>
-      <h1 class="display-5 fw-bold mb-2">Artificial Intelligence</h1>
-      <p class="lead mb-0">Explore the world of intelligent agents and cognitive machines.</p>
     </div>
   </section>
   <main class="container py-5">
-    <div class="row justify-content-center">
+    
+    <!-- What is AI in Simple Terms -->
+    <div class="content-section">
+      <div class="row justify-content-center mb-4">
+        <div class="col-lg-8 text-center">
+          <span class="badge badge-tech mb-2">Beginner</span>
+          <h2 class="fw-bold mb-3">What is AI in Simple Terms?</h2>
+          <p class="lead">Think of AI as giving computers a "brain" that can think and learn like humans do.</p>
+        </div>
+      </div>
+      
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100 p-4">
+            <h5 class="fw-bold text-primary mb-3"><i class="bi bi-lightbulb me-2"></i>Simple Analogy</h5>
+            <p><strong>AI is like teaching a computer to be smart.</strong> Just like how you learn to recognize a cat by seeing many pictures of cats, AI learns to recognize patterns by seeing lots of examples. It's like having a very fast, tireless student that never forgets what it learns!</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100 p-4">
+            <h5 class="fw-bold text-primary mb-3"><i class="bi bi-play-circle me-2"></i>Try This Right Now!</h5>
+            <ul class="mb-0">
+              <li>Ask Siri: "What's the weather today?"</li>
+              <li>Use Google Translate on your phone</li>
+              <li>Take a photo and use Google Lens</li>
+              <li>Check your Netflix recommendations</li>
+            </ul>
+            <small class="text-muted mt-2">These are all examples of AI in action!</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- How AI Works - Step by Step -->
+    <div class="content-section">
+      <div class="row justify-content-center mb-4">
+        <div class="col-lg-8 text-center">
+          <span class="badge badge-tech mb-2">Understanding</span>
+          <h2 class="fw-bold mb-3">How AI Works - Step by Step</h2>
+          <p class="lead">Let's break down how AI systems actually work in simple terms</p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100 p-4">
+            <div class="d-flex align-items-center mb-3">
+              <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; font-weight: bold;">1</div>
+              <h5 class="fw-bold mb-0 ms-3">Input Data</h5>
+            </div>
+            <p class="mb-0">AI systems start with data - pictures, text, numbers, or any information they need to learn from.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100 p-4">
+            <div class="d-flex align-items-center mb-3">
+              <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; font-weight: bold;">2</div>
+              <h5 class="fw-bold mb-0 ms-3">Process & Learn</h5>
+            </div>
+            <p class="mb-0">The AI analyzes the data, finds patterns, and learns rules about how things work.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100 p-4">
+            <div class="d-flex align-items-center mb-3">
+              <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; font-weight: bold;">3</div>
+              <h5 class="fw-bold mb-0 ms-3">Make Decisions</h5>
+            </div>
+            <p class="mb-0">Using what it learned, the AI can now make predictions, answer questions, or take actions.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100 p-4">
+            <div class="d-flex align-items-center mb-3">
+              <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; font-weight: bold;">4</div>
+              <h5 class="fw-bold mb-0 ms-3">Improve Over Time</h5>
+            </div>
+            <p class="mb-0">The more data and feedback it gets, the better the AI becomes at its tasks.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Common Misconceptions -->
+    <div class="content-section">
+      <div class="row justify-content-center mb-4">
+        <div class="col-lg-8 text-center">
+          <span class="badge badge-tech mb-2">Myth Busting</span>
+          <h2 class="fw-bold mb-3">Common Misconceptions About AI</h2>
+          <p class="lead">Let's clear up some common misunderstandings about artificial intelligence</p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100 p-4 border-start border-danger border-4">
+            <h6 class="fw-bold text-danger mb-2"><i class="bi bi-x-circle me-2"></i>Myth: AI is Just Like Human Intelligence</h6>
+            <p class="mb-0"><strong>Reality:</strong> AI is very good at specific tasks but lacks the general intelligence, creativity, and common sense that humans have. It's more like a very specialized tool than a human brain.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100 p-4 border-start border-danger border-4">
+            <h6 class="fw-bold text-danger mb-2"><i class="bi bi-x-circle me-2"></i>Myth: AI Will Replace All Jobs</h6>
+            <p class="mb-0"><strong>Reality:</strong> AI will change many jobs and create new ones, but it's more likely to augment human work rather than completely replace it. Think of it as a powerful assistant.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100 p-4 border-start border-danger border-4">
+            <h6 class="fw-bold text-danger mb-2"><i class="bi bi-x-circle me-2"></i>Myth: AI is Always Right</h6>
+            <p class="mb-0"><strong>Reality:</strong> AI can make mistakes, especially when given poor data or asked to do something it wasn't trained for. It's important to verify AI results.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100 p-4 border-start border-danger border-4">
+            <h6 class="fw-bold text-danger mb-2"><i class="bi bi-x-circle me-2"></i>Myth: AI is Too Complex to Understand</h6>
+            <p class="mb-0"><strong>Reality:</strong> While the technical details can be complex, the basic concepts of AI are quite simple. Anyone can understand how AI works at a fundamental level.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main AI Definition -->
+    <div class="row justify-content-center mb-5">
       <div class="col-lg-8">
         <div class="card p-4 bg-white text-dark shadow-sm">
           <div class="text-center">
             <span class="badge badge-tech mb-2">AI</span>
             <div class="feature-icon mb-2"><i class="bi bi-cpu"></i></div>
             <h1 class="card-title display-6 mb-3">Artificial Intelligence</h1>
+            <p class="lead">Artificial Intelligence research is defined as the study of "intelligent agents": any device that perceives its environment and takes actions that maximize its chance of successfully achieving its goal.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- AI Research Areas -->
+    <div class="content-section">
+      <h2 class="fw-bold mb-4">AI Research Areas</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 p-4">
+            <div class="text-center mb-3">
+              <i class="bi bi-search feature-icon"></i>
+              <h5 class="fw-bold">01 / AI Research</h5>
+            </div>
+            <p>Artificial Intelligence research focuses on creating systems that can perform tasks that typically require human intelligence. This includes problem-solving, pattern recognition, learning, and decision-making.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 p-4">
+            <div class="text-center mb-3">
+              <i class="bi bi-robot feature-icon"></i>
+              <h5 class="fw-bold">02 / AI Machines</h5>
+            </div>
+            <p>Artificial Intelligence is applied when a machine mimics "cognitive" functions that humans associate with other human minds, such as "learning" and "problem solving".</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 p-4">
+            <div class="text-center mb-3">
+              <i class="bi bi-layers feature-icon"></i>
+              <h5 class="fw-bold">03 / AI Stacks</h5>
+            </div>
+            <p>AI strides have been greatly increased with the democratization of technology. Cloud vendors now offer cutting-edge AI technology stacks including data collection, storage, processing, analytics, and reporting.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sub-Fields of AI -->
+    <div class="content-section">
+      <h2 class="fw-bold mb-4">Sub-Fields of Artificial Intelligence</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card p-4">
+            <h5 class="fw-bold text-primary mb-3"><i class="bi bi-graph-up me-2"></i>Machine Learning</h5>
+            <p>Algorithms that learn from data to make predictions or decisions without being explicitly programmed for specific tasks.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-4">
+            <h5 class="fw-bold text-primary mb-3"><i class="bi bi-chat-dots me-2"></i>Natural Language Processing</h5>
+            <p>Enables computers to understand, interpret, and generate human language in a meaningful way.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-4">
+            <h5 class="fw-bold text-primary mb-3"><i class="bi bi-mic me-2"></i>Speech Recognition</h5>
+            <p>Technology that converts spoken words into text, enabling voice-controlled applications and systems.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-4">
+            <h5 class="fw-bold text-primary mb-3"><i class="bi bi-robot me-2"></i>Robotics</h5>
+            <p>Combines AI with mechanical engineering to create intelligent machines that can perform physical tasks.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-4">
+            <h5 class="fw-bold text-primary mb-3"><i class="bi bi-eye me-2"></i>Computer Vision</h5>
+            <p>Enables machines to interpret and understand visual information from the world, including images and videos.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-4">
+            <h5 class="fw-bold text-primary mb-3"><i class="bi bi-brain me-2"></i>Expert Systems</h5>
+            <p>Computer systems that emulate the decision-making ability of a human expert in a specific domain.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- AI Technology Stacks -->
+    <div class="content-section">
+      <h2 class="fw-bold mb-4">AI Technology Stacks</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card p-4 shadow-sm">
+            <h6 class="fw-bold mb-2 text-primary"><i class="bi bi-database me-2"></i>Data Collection</h6>
+            <p class="mb-0 text-dark">Tools and platforms for gathering, storing, and managing large datasets from various sources.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-4 shadow-sm">
+            <h6 class="fw-bold mb-2 text-primary"><i class="bi bi-hdd-stack me-2"></i>Data Storage</h6>
+            <p class="mb-0 text-dark">Scalable storage solutions including cloud databases, data warehouses, and distributed systems.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-4 shadow-sm">
+            <h6 class="fw-bold mb-2 text-primary"><i class="bi bi-cpu me-2"></i>Data Processing</h6>
+            <p class="mb-0 text-dark">Computing resources and frameworks for processing and analyzing large volumes of data.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-4 shadow-sm">
+            <h6 class="fw-bold mb-2 text-primary"><i class="bi bi-bar-chart me-2"></i>Data Analytics</h6>
+            <p class="mb-0 text-dark">Advanced analytics tools for extracting insights and patterns from processed data.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-4 shadow-sm">
+            <h6 class="fw-bold mb-2 text-primary"><i class="bi bi-file-earmark-text me-2"></i>Data Output</h6>
+            <p class="mb-0 text-dark">Reporting and visualization tools for presenting AI results and insights to stakeholders.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-4 shadow-sm">
+            <h6 class="fw-bold mb-2 text-primary"><i class="bi bi-cloud me-2"></i>Cloud Platforms</h6>
+            <p class="mb-0 text-dark">Major cloud providers offering AI services: AWS, Azure, Google Cloud, and specialized AI platforms.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- AI Applications -->
+    <div class="content-section">
+      <h2 class="fw-bold mb-4">AI Applications in Modern Technology</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 p-4 text-center">
+            <i class="bi bi-phone feature-icon"></i>
+            <h5 class="fw-bold mb-3">Virtual Assistants</h5>
+            <p>Siri, Alexa, and Google Assistant use AI to understand voice commands and provide helpful responses.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 p-4 text-center">
+            <i class="bi bi-car-front feature-icon"></i>
+            <h5 class="fw-bold mb-3">Autonomous Vehicles</h5>
+            <p>Self-driving cars use AI to perceive their environment and make driving decisions in real-time.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 p-4 text-center">
+            <i class="bi bi-heart-pulse feature-icon"></i>
+            <h5 class="fw-bold mb-3">Healthcare</h5>
+            <p>AI assists in medical diagnosis, drug discovery, and personalized treatment plans.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 p-4 text-center">
+            <i class="bi bi-shield-check feature-icon"></i>
+            <h5 class="fw-bold mb-3">Cybersecurity</h5>
+            <p>AI systems detect and prevent cyber threats by analyzing patterns in network traffic and user behavior.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 p-4 text-center">
+            <i class="bi bi-cart feature-icon"></i>
+            <h5 class="fw-bold mb-3">E-commerce</h5>
+            <p>Recommendation systems and chatbots enhance shopping experiences and customer service.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 p-4 text-center">
+            <i class="bi bi-mortarboard feature-icon"></i>
+            <h5 class="fw-bold mb-3">Education</h5>
+            <p>AI-powered tutoring systems provide personalized learning experiences and adaptive content.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Getting Started Section -->
+    <div class="content-section">
+      <div class="row justify-content-center mb-4">
+        <div class="col-lg-8 text-center">
+          <span class="badge badge-tech mb-2">Next Steps</span>
+          <h2 class="fw-bold mb-3">Getting Started with AI</h2>
+          <p class="lead">Ready to dive deeper? Here are some resources to continue your AI journey</p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 p-4 text-center">
+            <i class="bi bi-book feature-icon"></i>
+            <h5 class="fw-bold mb-3">Learn Machine Learning</h5>
+            <p>Machine Learning is the most practical way to get started with AI. Learn how computers learn from data.</p>
+            <a href="ml.html" class="btn btn-primary">Explore ML</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 p-4 text-center">
+            <i class="bi bi-diagram-3 feature-icon"></i>
+            <h5 class="fw-bold mb-3">Explore Deep Learning</h5>
+            <p>Deep Learning is the cutting-edge of AI. Discover how neural networks work and their applications.</p>
+            <a href="dl.html" class="btn btn-primary">Explore DL</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 p-4 text-center">
+            <i class="bi bi-code-slash feature-icon"></i>
+            <h5 class="fw-bold mb-3">Start Coding</h5>
+            <p>Ready to build your own AI? Start with Python and popular AI libraries like TensorFlow or PyTorch.</p>
+            <a href="#" class="btn btn-primary">Learn to Code</a>
           </div>
         </div>
       </div>
