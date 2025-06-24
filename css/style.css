@@ -118,11 +118,14 @@ address {
 }
 ::-webkit-scrollbar {
   width: 8px;
-  background: #232a34;
+  background: #f5f7fa;
 }
 ::-webkit-scrollbar-thumb {
-  background: #0078d7;
+  background: #754ffe;
   border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5a3fd8;
 }
 .card.bg-white {
   background: #fff !important;
