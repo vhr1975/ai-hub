@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #181c24 0%, #232a34 100%);
+  color: #e3e8ee;
+  min-height: 100vh;
+}
+nav {
+  background: #232a34;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  padding: 0.5em 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+nav ul li {
+  margin: 0 1em;
+}
+nav ul li a {
+  color: #e3e8ee;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5em 1em;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  letter-spacing: 0.5px;
+  display: inline-block;
+}
+nav ul li a:hover, nav ul li a:focus {
+  background: linear-gradient(90deg, #0078d7 0%, #00c6fb 100%);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0,120,215,0.15);
+}
+main {
+  max-width: 900px;
+  margin: 3em auto 2em auto;
+  background: rgba(30, 34, 44, 0.98);
+  padding: 2.5em 2em;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.18);
+  position: relative;
+}
+h1, h2, h3 {
+  color: #00c6fb;
+  font-weight: 600;
+  margin-top: 0;
+  letter-spacing: 1px;
+}
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+h2 {
+  font-size: 1.5em;
+  margin-top: 1.5em;
+}
+section {
+  margin-bottom: 2em;
+  background: rgba(36, 41, 54, 0.92);
+  border-radius: 12px;
+  padding: 1.5em 1.2em;
+  box-shadow: 0 2px 12px rgba(0,198,251,0.04);
+}
+ul, ol {
+  padding-left: 1.5em;
+}
+li {
+  margin-bottom: 0.5em;
+}
+a {
+  color: #00c6fb;
+  transition: color 0.2s;
+}
+a:hover, a:focus {
+  color: #0078d7;
+}
+address {
+  font-style: normal;
+  color: #b0b8c9;
+  margin-top: 1em;
+}
+@media (max-width: 900px) {
+  main {
+    padding: 1.2em 0.5em;
+  }
+}
+@media (max-width: 600px) {
+  main {
+    padding: 0.7em 0.2em;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul li {
+    margin: 0.5em 0;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.1em;
+  }
+  section {
+    padding: 1em 0.5em;
+  }
+}
+::-webkit-scrollbar {
+  width: 8px;
+  background: #232a34;
+}
+::-webkit-scrollbar-thumb {
+  background: #0078d7;
+  border-radius: 4px;
+}
+.card.bg-white {
+  background: #fff !important;
+  color: #212529 !important;
+} 

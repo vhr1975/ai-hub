@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Mastery Hub</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body { background: #f5f7fa; font-family: 'Nunito Sans', 'Inter', Arial, sans-serif; }
+    .hero-bg {
+      background: linear-gradient(90deg, #754ffe 0%, #1c1e2b 100%);
+      color: #fff;
+      padding: 4rem 0 3rem 0;
+      border-radius: 0 0 2rem 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-illustration {
+      max-width: 320px;
+      width: 100%;
+      margin: 2rem auto 0 auto;
+      display: block;
+    }
+    .feature-icon {
+      font-size: 2.5rem;
+      color: #754ffe;
+      margin-bottom: 1rem;
+    }
+    .card {
+      border: none;
+      border-radius: 1rem;
+      box-shadow: 0 2px 16px rgba(44,62,80,0.08);
+      transition: transform 0.15s;
+    }
+    .card:hover { transform: translateY(-4px) scale(1.02); box-shadow: 0 6px 32px rgba(44,62,80,0.12); }
+    .badge-tech {
+      background: #e9e7fd;
+      color: #754ffe;
+      font-size: 0.9em;
+      font-weight: 600;
+      border-radius: 0.5rem;
+      padding: 0.4em 1em;
+      margin-bottom: 0.7em;
+      display: inline-block;
+    }
+    .navbar-brand { font-weight: 800; letter-spacing: 1px; }
+    .footer-link { color: #b0b8c9; text-decoration: none; }
+    .footer-link:hover { color: #754ffe; }
+    .footer-bg { background: #232a34; color: #b0b8c9; }
+    .footer-title { color: #fff; font-weight: 700; font-size: 1.1em; margin-bottom: 0.7em; }
+    .footer-logo { font-weight: 800; color: #fff; font-size: 1.3em; letter-spacing: 1px; }
+    .footer-logo span { color: #754ffe; }
+    .card.bg-white {
+      background: #fff !important;
+      color: #212529 !important;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3 sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">AI Mastery Hub</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="ai.html">Artificial Intelligence</a></li>
+          <li class="nav-item"><a class="nav-link" href="ml.html">Machine Learning</a></li>
+          <li class="nav-item"><a class="nav-link" href="dl.html">Deep Learning</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section class="hero-bg text-center">
+    <div class="container position-relative">
+      <div class="row align-items-center">
+        <div class="col-lg-7 mx-auto">
+          <h1 class="display-4 fw-bold mb-3">Master AI, Machine Learning & Deep Learning</h1>
+          <p class="lead mb-4">Your journey to AI expertise starts here. Explore, learn, and master the technologies shaping the future.</p>
+          <a href="ai.html" class="btn btn-lg btn-light text-primary fw-bold shadow-sm">Get Started</a>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="120" height="120" class="hero-illustration" style="color:#fff;">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0v6m0 0c-4.418 0-8-1.79-8-4V10m8 10c4.418 0 8-1.79 8-4V10"/>
+      </svg>
+    </div>
+  </section>
+  <main class="container py-5">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 text-center p-4">
+          <span class="badge badge-tech mb-2">AI</span>
+          <div class="feature-icon mb-2"><i class="bi bi-cpu"></i></div>
+          <h3 class="h5 fw-bold">Artificial Intelligence</h3>
+          <p class="mb-0">The study of intelligent agents that perceive their environment and take actions to maximize their chances of achieving goals.</p>
+          <a href="ai.html" class="stretched-link"></a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 text-center p-4">
+          <span class="badge badge-tech mb-2">ML</span>
+          <div class="feature-icon mb-2"><i class="bi bi-graph-up"></i></div>
+          <h3 class="h5 fw-bold">Machine Learning</h3>
+          <p class="mb-0">A subfield of AI focused on algorithms that learn from data to make predictions or decisions without being explicitly programmed.</p>
+          <a href="ml.html" class="stretched-link"></a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 text-center p-4">
+          <span class="badge badge-tech mb-2">DL</span>
+          <div class="feature-icon mb-2"><i class="bi bi-diagram-3"></i></div>
+          <h3 class="h5 fw-bold">Deep Learning</h3>
+          <p class="mb-0">A subset of ML using neural networks with multiple layers to learn from large amounts of data and recognize complex patterns.</p>
+          <a href="dl.html" class="stretched-link"></a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Explore Categories Section -->
+  <section class="container my-5">
+    <h2 class="mb-4 fw-bold">Explore Categories</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100 text-center p-4">
+          <div class="feature-icon mb-2"><i class="bi bi-cpu"></i></div>
+          <h5 class="fw-bold mb-1">Artificial Intelligence</h5>
+          <div class="text-muted small">8 Courses</div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 text-center p-4">
+          <div class="feature-icon mb-2"><i class="bi bi-graph-up"></i></div>
+          <h5 class="fw-bold mb-1">Machine Learning</h5>
+          <div class="text-muted small">12 Courses</div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 text-center p-4">
+          <div class="feature-icon mb-2"><i class="bi bi-diagram-3"></i></div>
+          <h5 class="fw-bold mb-1">Deep Learning</h5>
+          <div class="text-muted small">6 Courses</div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 text-center p-4">
+          <div class="feature-icon mb-2"><i class="bi bi-bar-chart"></i></div>
+          <h5 class="fw-bold mb-1">Data Science</h5>
+          <div class="text-muted small">10 Courses</div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 text-center p-4">
+          <div class="feature-icon mb-2"><i class="bi bi-laptop"></i></div>
+          <h5 class="fw-bold mb-1">Programming</h5>
+          <div class="text-muted small">23 Courses</div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 text-center p-4">
+          <div class="feature-icon mb-2"><i class="bi bi-cloud"></i></div>
+          <h5 class="fw-bold mb-1">Cloud Computing</h5>
+          <div class="text-muted small">18 Courses</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Practice Coding & Hiring Assessments Section -->
+  <section class="container my-5">
+    <h2 class="mb-4 fw-bold">Practice Coding & Hiring Assessments</h2>
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+      <div class="col">
+        <div class="card h-100 text-center p-4 border-0 shadow-sm">
+          <div class="feature-icon mb-2"><i class="bi bi-code-slash"></i></div>
+          <h6 class="fw-bold mb-2">Coding Practice</h6>
+          <p class="small text-muted">Sharpen your coding skills with real-world problems.</p>
+          <a href="#" class="btn btn-outline-primary btn-sm">Start Practice</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 text-center p-4 border-0 shadow-sm">
+          <div class="feature-icon mb-2"><i class="bi bi-kanban"></i></div>
+          <h6 class="fw-bold mb-2">Projects</h6>
+          <p class="small text-muted">Work on hands-on projects to build your portfolio.</p>
+          <a href="#" class="btn btn-outline-primary btn-sm">Start Projects</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 text-center p-4 border-0 shadow-sm">
+          <div class="feature-icon mb-2"><i class="bi bi-award"></i></div>
+          <h6 class="fw-bold mb-2">Skill Assessment</h6>
+          <p class="small text-muted">Test your knowledge and earn certificates.</p>
+          <a href="#" class="btn btn-outline-primary btn-sm">Start Assessment</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 text-center p-4 border-0 shadow-sm">
+          <div class="feature-icon mb-2"><i class="bi bi-person-badge"></i></div>
+          <h6 class="fw-bold mb-2">Interview Prep</h6>
+          <p class="small text-muted">Prepare for interviews with curated questions.</p>
+          <a href="#" class="btn btn-outline-primary btn-sm">Start Interview</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer-bg pt-5 pb-3 mt-auto">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="footer-logo mb-2">AI <span>Mastery</span> Hub</div>
+          <div class="small">Your journey to AI expertise starts here.</div>
+        </div>
+        <div class="col-md-2">
+          <div class="footer-title">Explore</div>
+          <ul class="list-unstyled">
+            <li><a href="ai.html" class="footer-link">Artificial Intelligence</a></li>
+            <li><a href="ml.html" class="footer-link">Machine Learning</a></li>
+            <li><a href="dl.html" class="footer-link">Deep Learning</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <div class="footer-title">About</div>
+          <ul class="list-unstyled">
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <div class="footer-title">Contact</div>
+          <div class="small">Email: <a href="mailto:info@mysite.com" class="footer-link">info@mysite.com</a></div>
+          <div class="small">San Francisco, CA 94901</div>
+        </div>
+      </div>
+      <div class="text-center small text-secondary">&copy; 2023 by DATO. Inspired by <a href="https://themes.getbootstrap.com/preview/?theme_id=61529" class="footer-link">Geeks Theme</a>. Proudly created for GitHub Spaces.</div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
