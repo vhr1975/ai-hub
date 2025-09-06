@@ -1,0 +1,200 @@
+  <!-- Hero, main card, topics, and why learn sections only -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Science | AI Mastery Hub</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body { background: #f5f7fa; font-family: 'Nunito Sans', 'Inter', Arial, sans-serif; }
+    .hero-bg { background: linear-gradient(90deg, #754ffe 0%, #1c1e2b 100%); color: #fff; padding: 4rem 0 3rem 0; border-radius: 0 0 2rem 2rem; position: relative; overflow: hidden; }
+    .hero-illustration { max-width: 120px; width: 100%; margin: 2rem auto 0 auto; display: block; }
+    .feature-icon { font-size: 2.5rem; color: #754ffe; margin-bottom: 1rem; }
+    .badge-tech { background: #e9e7fd; color: #754ffe; font-size: 0.9em; font-weight: 600; border-radius: 0.5rem; padding: 0.4em 1em; margin-bottom: 0.7em; display: inline-block; }
+    .navbar-brand { font-weight: 800; letter-spacing: 1px; }
+    .footer-link { color: #b0b8c9; text-decoration: none; }
+    .footer-link:hover { color: #754ffe; }
+    .footer-bg { background: #232a34; color: #b0b8c9; }
+    .footer-title { color: #fff; font-weight: 700; font-size: 1.1em; margin-bottom: 0.7em; }
+    .footer-logo { font-weight: 800; color: #fff; font-size: 1.3em; letter-spacing: 1px; }
+    .footer-logo span { color: #754ffe; }
+    .content-section { margin-bottom: 3rem; }
+    .tech-stack-item { background: #f8f9fa; border-radius: 0.5rem; padding: 1rem; margin-bottom: 1rem; border-left: 4px solid #754ffe; }
+    .learning-level { background: linear-gradient(45deg, #754ffe, #5a3fd8); color: white; padding: 0.3em 0.8em; border-radius: 1rem; font-size: 0.8em; font-weight: 600; }
+    .step-box { background: #f8f9fa; border-radius: 0.5rem; padding: 1.5rem; margin: 1rem 0; border: 1px solid #e9ecef; }
+    .step-number { background: #754ffe; color: white; width: 30px; height: 30px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-weight: bold; margin-right: 1rem; }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3 sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">AI Mastery Hub</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="ai.html">AI Basics</a></li>
+          <li class="nav-item"><a class="nav-link" href="ml.html">Machine Learning</a></li>
+          <li class="nav-item"><a class="nav-link" href="dl.html">Deep Learning</a></li>
+          <li class="nav-item"><a class="nav-link" href="genai.html">Generative AI</a></li>
+          <li class="nav-item"><a class="nav-link active" href="datascience.html">Data Science</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section class="hero-bg text-center">
+      <div class="container position-relative">
+        <div class="row align-items-center">
+          <div class="col-lg-7 mx-auto">
+            <h1 class="display-4 fw-bold mb-3">Data Science</h1>
+            <p class="lead mb-4">Learn how data is transformed into insights and decisions. Discover the tools, techniques, and real-world applications of Data Science.</p>
+            <div class="d-flex justify-content-center gap-2 mb-3">
+              <span class="learning-level">Beginner Friendly</span>
+              <span class="learning-level">Step-by-Step</span>
+              <span class="learning-level">Real Examples</span>
+            </div>
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="120" height="120" class="hero-illustration" style="color:#fff;">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0v6m0 0c-4.418 0-8-1.79-8-4V10m8 10c4.418 0 8-1.79 8-4V10"/>
+        </svg>
+      </div>
+  </section>
+  <main class="container py-5">
+    <!-- Main Data Science Definition -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-8">
+        <div class="card p-4 bg-white text-dark shadow-sm">
+          <div class="text-center">
+            <span class="badge badge-tech mb-2">Data Science</span>
+            <div class="feature-icon mb-2"><i class="bi bi-bar-chart"></i></div>
+            <h1 class="card-title display-6 mb-3">What is Data Science?</h1>
+            <p class="lead">Data Science combines domain expertise, programming, and statistics to extract insights from data. It powers decision-making in business, healthcare, technology, and more.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Key Topics Section (only for beginner, shown below the card) -->
+    <div id="beginner-topics" class="content-section">
+      <div class="row justify-content-center mb-4">
+        <div class="col-lg-8 text-center">
+          <h2 class="fw-bold mb-3">Key Topics in Data Science</h2>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 p-4">
+            <h5 class="fw-bold text-primary mb-3"><i class="bi bi-clipboard-data me-2"></i>Data Collection & Cleaning</h5>
+            <p>Gathering and preparing data is the foundation of any data science project. Clean data leads to better results.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 p-4">
+            <h5 class="fw-bold text-primary mb-3"><i class="bi bi-graph-up-arrow me-2"></i>Exploratory Data Analysis</h5>
+            <p>Understanding data through visualization and statistics helps uncover patterns and insights.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 p-4">
+            <h5 class="fw-bold text-primary mb-3"><i class="bi bi-bar-chart-line me-2"></i>Statistical Modeling</h5>
+            <p>Using mathematical models to make predictions and understand relationships in data.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 p-4">
+            <h5 class="fw-bold text-primary mb-3"><i class="bi bi-cpu me-2"></i>Machine Learning in Data Science</h5>
+            <p>Applying algorithms to learn from data and make predictions or decisions automatically.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 p-4">
+            <h5 class="fw-bold text-primary mb-3"><i class="bi bi-pie-chart me-2"></i>Data Visualization</h5>
+            <p>Presenting data in visual formats to make insights clear and actionable.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 p-4">
+            <h5 class="fw-bold text-primary mb-3"><i class="bi bi-lightbulb me-2"></i>Real-world Applications</h5>
+            <p>Data Science is used in healthcare, finance, marketing, sports, and more to solve real problems.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Why Learn Data Science Section (only for beginner, shown below topics) -->
+    <div id="beginner-why" class="content-section">
+      <div class="row justify-content-center mb-4">
+        <div class="col-lg-8 text-center">
+          <h2 class="fw-bold mb-3">Why Learn Data Science?</h2>
+          <p class="lead">Data Science skills are in high demand across industries. Understanding data helps you make better decisions, solve complex problems, and unlock new opportunities.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Intermediate Level Content -->
+    <div id="intermediate-content" class="content-section" style="display:none;">
+      <h2 class="fw-bold mb-4">Intermediate Data Science</h2>
+      <div class="card p-4 mb-4">
+        <p>Dive deeper into exploratory data analysis, visualization, and basic statistical modeling.</p>
+      </div>
+      <!-- Add intermediate-specific content here if desired -->
+    </div>
+
+    <!-- Advanced Level Content -->
+    <div id="advanced-content" class="content-section" style="display:none;">
+      <h2 class="fw-bold mb-4">Advanced Data Science</h2>
+      <div class="card p-4 mb-4">
+        <p>Explore advanced machine learning, predictive modeling, and real-world applications.</p>
+      </div>
+      <!-- Add advanced-specific content here if desired -->
+    </div>
+  </main>
+  <footer class="footer-bg py-5 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 mb-4 mb-md-0">
+          <div class="footer-title">AI Mastery Hub</div>
+          <div class="footer-logo">AI Mastery Hub <span>&copy; 2025</span></div>
+          <div class="small mt-2">Your guide to AI, ML, DL, Data Science, and Generative AI.</div>
+        </div>
+        <div class="col-md-3">
+          <div class="footer-title">Explore</div>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="ai.html" class="footer-link">AI Basics</a></li>
+            <li><a href="ml.html" class="footer-link">Machine Learning</a></li>
+            <li><a href="dl.html" class="footer-link">Deep Learning</a></li>
+            <li><a href="genai.html" class="footer-link">Generative AI</a></li>
+            <li><a href="datascience.html" class="footer-link">Data Science</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <div class="footer-title">About</div>
+          <ul class="list-unstyled">
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <div class="footer-title">Contact</div>
+          <div class="small">Email: <a href="mailto:info@mysite.com" class="footer-link">info@mysite.com</a></div>
+          <div class="small">San Francisco, CA 94901</div>
+        </div>
+      </div>
+      <div class="text-center small text-secondary mt-4">&copy; 2025 by AI Mastery Hub. Inspired by Geeks Theme. Proudly created for GitHub Spaces.</div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
